@@ -1,6 +1,6 @@
 {
     "name": "ziming/laravel-email-sniper-link",
-    "description": "This is my package laravel-email-sniper-link",
+    "description": "Laravel package to generate email sniper links based on given email",
     "keywords": [
         "ziming",
         "laravel",
