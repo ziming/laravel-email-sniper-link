@@ -4,7 +4,6 @@ namespace Ziming\LaravelEmailSniperLink;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ziming\LaravelEmailSniperLink\Commands\LaravelEmailSniperLinkCommand;
 
 class LaravelEmailSniperLinkServiceProvider extends PackageServiceProvider
 {
