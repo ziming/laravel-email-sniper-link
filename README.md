@@ -46,7 +46,11 @@ LaravelEmailSniperLink::getSniperLinkQuick('receiver@gmail.com', 'optional-from-
 LaravelEmailSniperLink::getSniperLink('receiver@gmail.com', 'optional-from-email@gmail.com')
 ```
 
-In the future I may add helper functions. The `LaravelEmailSniperLink` class has more static methods as well which might be useful for you
+The `LaravelEmailSniperLink` class has more static methods as well which might be useful for you.
+
+Some helper functions are also available. For now there are 2. `email_sniper_link_quick(string $receiverEmail, ?string $fromEmail = null)` and `email_sniper_link(string $receiverEmail, ?string $fromEmail = null)`.
+
+```php
 
 ## Testing
 
