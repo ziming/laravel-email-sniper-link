@@ -50,8 +50,6 @@ The `LaravelEmailSniperLink` class has more static methods as well which might b
 
 Some helper functions are also available. For now there are 2. `email_sniper_link_quick(string $receiverEmail, ?string $fromEmail = null)` and `email_sniper_link(string $receiverEmail, ?string $fromEmail = null)`.
 
-```php
-
 ## Testing
 
 ```bash
