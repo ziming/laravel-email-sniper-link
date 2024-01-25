@@ -13,7 +13,7 @@ if (! function_exists('email_sniper_link_quick')) {
 
 if (! function_exists('email_sniper_link')) {
     /**
-     * @throws \Detection\Exception\MobileDetectException
+     * @throws Detection\Exception\MobileDetectException
      */
     function sniper_link_quick(string $receiverEmail, ?string $fromEmail = null): ?string
     {
