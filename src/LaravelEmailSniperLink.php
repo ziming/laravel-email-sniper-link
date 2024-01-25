@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Ziming\LaravelEmailSniperLink;
 
 use Detection\Exception\MobileDetectException;
@@ -72,9 +74,6 @@ class LaravelEmailSniperLink
         return self::googleMailDesktopSniperLink($receiverEmail);
     }
 
-    /**
-     * @throws MobileDetectException
-     */
     public static function outlookSniperLink(string $receiverEmail): string
     {
         $detect = new MobileDetect();
