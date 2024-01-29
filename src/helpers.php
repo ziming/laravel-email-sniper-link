@@ -15,7 +15,7 @@ if (! function_exists('email_sniper_link')) {
     /**
      * @throws Detection\Exception\MobileDetectException
      */
-    function sniper_link_quick(string $receiverEmail, ?string $fromEmail = null): ?string
+    function email_sniper_link(string $receiverEmail, ?string $fromEmail = null): ?string
     {
         return LaravelEmailSniperLink::getSniperLink($receiverEmail, $fromEmail);
     }
