@@ -42,13 +42,24 @@ LaravelEmailSniperLink::getSniperLinkQuick('receiver@gmail.com', 'optional-from-
 
 // This will do a more accurate guess by not only checking the ending email address but also the MX record of the email address
 // if the email address domain is not 1 of the common ones.
-// Which is more useful for business emails. But it does make network calls to fetch the MX records so it is slower
+// Which is more useful for business emails. But it does make network calls to fetch the MX records, so it is a little slower
 LaravelEmailSniperLink::getSniperLink('receiver@gmail.com', 'optional-from-email@gmail.com')
 ```
 
 The `LaravelEmailSniperLink` class has more static methods as well which might be useful for you.
 
-Some helper functions are also available. For now there are 2. `email_sniper_link_quick(string $receiverEmail, ?string $fromEmail = null)` and `email_sniper_link(string $receiverEmail, ?string $fromEmail = null)`.
+Some helper functions are also available. For now there are 2. 
+
+```php
+// This just do a quick guess based on the ending email address such as gmail.com, outlook.com, icloud.com etc.
+email_sniper_link_quick(string $receiverEmail, ?string $fromEmail = null);
+
+// This will do a more accurate guess by not only checking the ending email address but also the MX record of the email address
+// if the email address domain is not 1 of the common ones.
+// Which is more useful for business emails. But it does make network calls to fetch the MX records, so it is a little slower
+email_sniper_link(string $receiverEmail, ?string $fromEmail = null);
+
+```
 
 ## Testing
 
