@@ -65,7 +65,7 @@ class LaravelEmailSniperLink
      */
     public static function googleSniperLink(string $receiverEmail): string
     {
-        $detect = new MobileDetect();
+        $detect = new MobileDetect;
 
         if ($detect->isiPhone() || $detect->isiPad()) {
             return 'googlegmail://';
@@ -76,7 +76,7 @@ class LaravelEmailSniperLink
 
     public static function outlookSniperLink(string $receiverEmail): string
     {
-        $detect = new MobileDetect();
+        $detect = new MobileDetect;
 
         if ($detect->isiPhone() || $detect->isiPad()) {
             return 'ms-outlook://';
@@ -90,7 +90,7 @@ class LaravelEmailSniperLink
      */
     public static function yahooMailSniperLink(?string $fromEmail = null): string
     {
-        $detect = new MobileDetect();
+        $detect = new MobileDetect;
 
         if ($detect->isiPhone() || $detect->isiPad()) {
             return 'ymail://';
@@ -104,7 +104,7 @@ class LaravelEmailSniperLink
      */
     public static function iCloudMailSniperLink(): string
     {
-        $detect = new MobileDetect();
+        $detect = new MobileDetect;
 
         if ($detect->isiPhone() || $detect->isiPad()) {
             return 'message://';
@@ -249,7 +249,7 @@ class LaravelEmailSniperLink
             $fromEmail = config('mail.from.address');
         }
 
-        $detect = new MobileDetect();
+        $detect = new MobileDetect;
 
         if ($detect->isiPhone() || $detect->isiPad()) {
             return 'protonmail://';
